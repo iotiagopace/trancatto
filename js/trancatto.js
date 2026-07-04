@@ -10,6 +10,20 @@ nav?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => 
 }));
 document.querySelector("#year").textContent = new Date().getFullYear();
 
+const contactForm = document.querySelector("#contact-form");
+contactForm?.addEventListener("submit", event => {
+  event.preventDefault();
+  const data = new FormData(contactForm);
+  const message = [
+    "Olá, quero conhecer as linhas da Trançatto.",
+    "",
+    `Nome: ${data.get("nome")}`,
+    `E-mail: ${data.get("email")}`,
+    `Telefone: ${data.get("telefone")}`
+  ].join("\n");
+  window.open(`https://wa.me/5517997579903?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+});
+
 const revealItems = document.querySelectorAll(".product, .section-head, .palette-title, .swatches, .feature-copy");
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {

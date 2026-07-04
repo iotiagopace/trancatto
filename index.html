@@ -89,6 +89,36 @@
       </div>
     </section>
 
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="gallery-heading section">
+        <p class="eyebrow dark">Matéria em detalhe</p>
+        <h2 id="gallery-title">Texturas para<br>ver de perto.</h2>
+        <p>Tramas, espessuras e cores registradas na nossa produção. Cada linha nasce para ganhar escala nas mãos de quem projeta.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-wide">
+          <img src="images/trancatto/gallery/verde-1.jpg" alt="Linha verde-pinho em detalhe" loading="lazy">
+          <figcaption>Verde pinho · corda náutica</figcaption>
+        </figure>
+        <figure>
+          <img src="images/trancatto/gallery/terra-1.jpg" alt="Trama terracota produzida pela Trançatto" loading="lazy">
+          <figcaption>Terracota · tricô náutico</figcaption>
+        </figure>
+        <figure>
+          <img src="images/trancatto/gallery/verde-2.jpg" alt="Rolos de corda náutica verde-pinho" loading="lazy">
+          <figcaption>Acabamento e consistência</figcaption>
+        </figure>
+        <figure class="gallery-tall">
+          <img src="images/trancatto/gallery/terra-2.jpg" alt="Detalhe do acabamento terracota" loading="lazy">
+          <figcaption>Cor firme · toque preciso</figcaption>
+        </figure>
+        <figure class="gallery-wide">
+          <img src="images/trancatto/gallery/verde-3.jpg" alt="Produção de corda verde-pinho" loading="lazy">
+          <figcaption>Produção própria · controle em cada etapa</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="palette section" id="cores">
       <div class="palette-title">
         <p class="eyebrow dark">Paleta Trançatto</p>
@@ -111,7 +141,12 @@
         <p class="eyebrow">Seu próximo projeto começa aqui</p>
         <h2>Vamos dar forma<br>à sua ideia?</h2>
         <p>Fale com nosso time para receber o catálogo, consultar cores e encontrar a linha ideal.</p>
-        <a class="button" href="https://wa.me/5517997579903?text=Ol%C3%A1%2C%20quero%20receber%20o%20cat%C3%A1logo%20da%20Trançatto." target="_blank" rel="noopener">Conversar pelo WhatsApp <span>↗</span></a>
+        <form class="contact-form" id="contact-form">
+          <label><span>Nome</span><input type="text" name="nome" autocomplete="name" placeholder="Seu nome" required></label>
+          <label><span>E-mail</span><input type="email" name="email" autocomplete="email" placeholder="voce@empresa.com.br" required></label>
+          <label><span>Telefone</span><input type="tel" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000" required></label>
+          <button class="button" type="submit">Enviar pelo WhatsApp <span>↗</span></button>
+        </form>
       </div>
     </section>
   </main>
@@ -120,9 +155,11 @@
     <div class="footer-brand"><img src="images/trancatto/asset-5.png" alt="Trançatto"><p>Cordas e tricôs náuticos<br>para móveis e decoração.</p></div>
     <div><small>Navegue</small><a href="#sobre">A Trançatto</a><a href="#produtos">Produtos</a><a href="#cores">Cores</a></div>
     <div><small>Conecte-se</small><a href="https://www.instagram.com/trancatto.ind/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://wa.me/5517997579903" target="_blank" rel="noopener">WhatsApp ↗</a></div>
-    <p class="copyright">© <span id="year"></span> Trançatto. Todos os direitos reservados.</p>
+    <p class="copyright">© <span id="year"></span> Trançatto. Todos os direitos reservados. <span>Desenvolvido por <a href="https://metry.cc/" target="_blank" rel="noopener">metry.cc ↗</a> e <a href="https://bemseutipo.com.br/" target="_blank" rel="noopener">BST ↗</a></span></p>
   </footer>
-  <a class="whatsapp" href="https://wa.me/5517997579903" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">W</a>
+  <a class="whatsapp" href="https://wa.me/5517997579903" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M19.11 17.21c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.59.13-.17.26-.67.85-.83 1.02-.15.17-.3.2-.56.07-.26-.13-1.09-.4-2.08-1.29-.77-.68-1.29-1.53-1.44-1.79-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.07-.13-.59-1.41-.8-1.93-.21-.51-.43-.44-.59-.45h-.5c-.17 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.69c.13.17 1.83 2.8 4.44 3.93.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.17-.5-.3M16.03 26.67h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.02 1.05 1.07-3.92-.25-.4a10.61 10.61 0 1 1 9 4.98m9.03-19.61A12.68 12.68 0 0 0 5.1 22.31L3.3 28.87l6.71-1.76a12.66 12.66 0 0 0 6.01 1.53h.01A12.68 12.68 0 0 0 25.06 7.06"/></svg>
+  </a>
   <script src="js/trancatto.js"></script>
 </body>
 </html>
