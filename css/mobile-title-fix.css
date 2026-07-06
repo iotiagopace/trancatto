@@ -1,5 +1,5 @@
 @media (max-width: 560px) {
-  .hero h1 {
+  .hero .hero-content h1 {
     max-width: 100%;
     font-size: min(15.5vw, 62px);
     overflow-wrap: normal;
